@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<style>
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+</style>
+
+<main class="form-signin">
+
+  <form method="post">
+
+    <h1 align="center" class="h3 mb-3 fw-normal">Please sign in</h1>
+    {{form.hidden_tag()}}
+    {{form.email.label(class="visually-hidden")}}{{form.email(class="form-control")}}<br>
+    {{form.password.label(class="visually-hidden")}}{{form.password(class="form-control")}}<br>
+    {{form.submit(class="w-100 btn btn-lg btn-primary")}}
+
+  </form>
+</main>
+
+{% endblock content %}
