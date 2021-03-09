@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="jumbotron">
+<div class="border jumbotron">
   <div align='center'>
     <h1>Here's your account information {{current_user.username}}.</h1>
     <img align='center' src="{{url_for('static', filename='profile_pics/' + current_user.profile_image)}}">
