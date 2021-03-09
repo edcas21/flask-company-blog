@@ -61,7 +61,6 @@ imagesize==1.2.0
 importlib-metadata==2.0.0
 iniconfig==1.1.1
 intervaltree==3.1.0
-ipykernel==5.3.4
 ipython==7.19.0
 ipython-genutils==0.2.0
 ipywidgets==7.5.1
