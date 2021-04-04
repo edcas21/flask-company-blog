@@ -11,17 +11,19 @@
 }
 </style>
 
-<main class="form-signin">
+  <main class="form-signin border">
 
-  <form method="post">
+    <form method="post">
 
-    <h1 align="center" class="h3 mb-3 fw-normal">Please sign in</h1>
-    {{form.hidden_tag()}}
-    {{form.email.label(class="visually-hidden")}}{{form.email(class="form-control")}}<br>
-    {{form.password.label(class="visually-hidden")}}{{form.password(class="form-control")}}<br>
-    {{form.submit(class="w-100 btn btn-lg btn-primary")}}
+      <h1 align="center" class="h3 mb-3 fw-normal">Please sign in</h1>
+      {{form.hidden_tag()}}
+      {{form.email.label(class="visually-hidden")}}{{form.email(class="form-control")}}<br>
+      {{form.password.label(class="visually-hidden")}}{{form.password(class="form-control")}}<br>
+      {{form.submit(class="w-100 btn btn-lg btn-primary")}}
 
-  </form>
-</main>
+    </form>
+  </main>
+
+
 
 {% endblock content %}
